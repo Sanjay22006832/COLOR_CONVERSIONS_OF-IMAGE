@@ -49,19 +49,16 @@ o	Save the final modified image to your local directory.
 
 ## Output:
 
-
 ### i)Read and Display an Image
 ```
 import cv2
-img=cv2.imread('goat.jpg')
-cv2.imshow('Thalaivar',img)
+img=cv2.imread('loki naa.jpg')
+cv2.imshow('LOKI',img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### OUTPUT:
-![Screenshot 2024-09-19 161221](https://github.com/user-attachments/assets/317f422f-8787-48c1-9fd8-ab2aff7a15da)
-
-
+![Screenshot 2024-09-18 214002](https://github.com/user-attachments/assets/013a9f3d-3079-4bba-8650-ea09c7431dfd)
 <br>
 <br>
 
@@ -69,20 +66,19 @@ cv2.destroyAllWindows()
 i)Draw a line from the top-left to the bottom-right of the image.
 ```
 import cv2
-img = cv2.imread("goat.jpg")
+img = cv2.imread("loki naa.jpg")
 res = cv2.line(img, (0, 0), (1025, 680), (255, 0, 0), 3)
-cv2.imshow('TVK', res)
+cv2.imshow('LOKI NAA', res)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### OUTPUT:
-![Screenshot 2024-09-19 161228](https://github.com/user-attachments/assets/68777943-c65a-4484-860d-ddf214c76583)
-
+![Screenshot 2024-09-18 214528](https://github.com/user-attachments/assets/a2b0b581-57b8-4b67-b3a7-cb49a3c3ebf6)
 
 ii)Draw a circle at the center of the image.
 ```
 # Load the image
-img = cv2.imread("goat.jpg")
+img = cv2.imread("loki naa.jpg")
 
 # Get the dimensions of the image
 height, width, _ = img.shape
@@ -94,38 +90,36 @@ center_coordinates = (width // 2, height // 2)
 res = cv2.circle(img, center_coordinates, 150, (0, 0, 255), 10)
 
 # Display the image with the circle
-cv2.imshow('tvk thalaivar', res)
+cv2.imshow('loki naa', res)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### OUTPUT:
-![Screenshot 2024-09-19 161313](https://github.com/user-attachments/assets/20b0409c-eb94-4ddf-96f0-8c4cc683d169)
-
+![Screenshot 2024-09-18 214742](https://github.com/user-attachments/assets/7fc05cd2-1e2e-46f7-b1f1-338ff6844323)
 
 iii)Draw a rectangle around a specific region of interest in the image.
 ```
-img = cv2.imread("goat.jpg")
+img = cv2.imread("loki naa.jpg")
 start=(0,0)
 stop=(318,200)
 color=(255,255,100)
 thickness=10
 res_img=cv2.rectangle(img,start,stop,color,thickness)
 # Display the HSV image
-cv2.imshow('TVK Thalaivar', res_img)
+cv2.imshow('Image Window', res_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### OUTPUT:
-![Screenshot 2024-09-19 161359](https://github.com/user-attachments/assets/bd780969-97a6-446d-ba8c-7cadd704a556)
-
+![Screenshot 2024-09-18 214921](https://github.com/user-attachments/assets/2f6038e9-8c3a-47ec-a9a1-303741ff8b5d)
 
 iv)Add the text at the bottom of the image.
 ```
-img = cv2.imread("goat.JPG")
+img = cv2.imread("loki naa.JPG")
 
 # Define the text to be added and its position
-text = "THAMIZHAGA VETRI KAZHAGAM"
-position = (150, 600)  # Positioning the text at the top-left corner
+text = "LET HIM COOK..."
+position = (140, 300)  # Positioning the text at the top-left corner
 
 # Set the font, scale, color, and thickness of the text
 font = cv2.FONT_HERSHEY_SIMPLEX
@@ -142,9 +136,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### OUTPUT:
-![Screenshot 2024-09-19 161804](https://github.com/user-attachments/assets/749c52e1-e168-4fb1-92bc-1f19c68b2bf5)
-
-
+![Screenshot 2024-09-18 215103](https://github.com/user-attachments/assets/a2f6f2de-bd4f-4d5f-a7a7-32a20b43270b)
 <br>
 <br>
 
@@ -158,10 +150,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### OUTPUT:
-![Screenshot 2024-09-19 161854](https://github.com/user-attachments/assets/874fdeea-ee00-4404-9d7e-1656324afede)
-
-
-
+![Screenshot 2024-09-18 215405](https://github.com/user-attachments/assets/6cd8057d-d3f9-4c1f-90ca-333928862ce0)
 
 ii.)Convert the image from RGB to GRAY and display it.
 ```
@@ -172,8 +161,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### OUTPUT:
-![Screenshot 2024-09-19 162023](https://github.com/user-attachments/assets/1ad2e467-e608-483a-8a00-4476b005ada3)
-
+![Screenshot 2024-09-18 215429](https://github.com/user-attachments/assets/ddee4c0a-6e51-4d46-aa35-7285ed7f9d7e)
 
 iii.)Convert the image from RGB to YCrCb and display it.
 ```
@@ -184,8 +172,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### OUTPUT:
-![Screenshot 2024-09-19 161944](https://github.com/user-attachments/assets/7ee3b154-3126-4e30-ad88-85b1a63eaef9)
-
+![Screenshot 2024-09-18 215458](https://github.com/user-attachments/assets/af36e84f-47e4-49ce-b498-53d095814271)
 
 iv.)Convert the HSV image back to RGB and display it.
 ```
@@ -196,8 +183,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### OUTPUT:
-![Screenshot 2024-09-23 143248](https://github.com/user-attachments/assets/b4c84e35-228b-4f1a-b2df-010121513b41)
-
+![Screenshot 2024-09-18 215519](https://github.com/user-attachments/assets/7cbcc615-71fa-4870-98ed-7cf625708ef0)
 <br>
 <br>
 
@@ -221,12 +207,9 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### OUTPUT:
-![Screenshot 2024-09-23 143333](https://github.com/user-attachments/assets/1dee70ef-9b1d-4421-8cd8-8b6cc0120aa3)
-![Screenshot 2024-09-23 143340](https://github.com/user-attachments/assets/78e5c580-cf9d-41f9-a075-4d5a20dc74f4)
+![Screenshot 2024-09-18 215953](https://github.com/user-attachments/assets/5937ddd6-48e7-4433-b2b0-0119720fde1e)
 
-
-
-
+![Screenshot 2024-09-18 215940](https://github.com/user-attachments/assets/1c5fe924-6258-4277-b76e-2585d8b29c85)
 <br>
 <br>
 
@@ -243,8 +226,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### OUTPUT:
-![Screenshot 2024-09-23 143412](https://github.com/user-attachments/assets/890beba0-5d0e-4361-98e3-de95993f6ff9)
-
+![Screenshot 2024-09-18 220202](https://github.com/user-attachments/assets/8701a8be-f0fb-43e6-b0af-e0ee8ea24f32)
 <br>
 <br>
 
@@ -263,8 +245,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### OUTPUT:
-![Screenshot 2024-09-23 143613](https://github.com/user-attachments/assets/b8766969-c9bd-4143-93e3-579ca67d8974)
-
+![Screenshot 2024-09-18 220244](https://github.com/user-attachments/assets/993aee78-235c-4760-a2bd-65fa4eb9de63)
 <br>
 <br>
 
@@ -279,8 +260,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### OUTPUT:
-![Screenshot 2024-09-23 143637](https://github.com/user-attachments/assets/8c517538-682e-4f68-8269-fd70ecee461d)
-
+![Screenshot 2024-09-18 220455](https://github.com/user-attachments/assets/bd60df16-ca83-421c-b8f6-966fca5f529f)
 
 ii.)Flip the original image vertically and display it.
 ```
@@ -293,8 +273,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### OUTPUT:
-![Screenshot 2024-09-23 143709](https://github.com/user-attachments/assets/e22834e4-d4c4-4ab3-8d1b-2860188923ba)
-
+![Screenshot 2024-09-18 220533](https://github.com/user-attachments/assets/88d12514-1be8-4ffa-8983-4686ced95655)
 <br>
 <br>
 
@@ -303,8 +282,7 @@ cv2.destroyAllWindows()
 cv2.imwrite('loki naa.jpg',image)
 ```
 ### OUTPUT:
-![Screenshot 2024-09-23 143806](https://github.com/user-attachments/assets/0ed73861-15d3-4bfa-96d4-2eeb9f9ed89f)
-
+![Screenshot 2024-09-18 220715](https://github.com/user-attachments/assets/7cd105c7-37b9-4ed4-b5a3-a0256495fe1d)
 <br>
 <br>
 
